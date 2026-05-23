@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft Sculpture - Handmade Fuzzy Wire Crafts</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <!-- Custom CSS - NO TAILWIND -->
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-fixed">
+    <div class="nav-container">
+      <a href="index.html" class="logo-container">
+        <div class="logo-icon">S</div>
+        <span class="logo-text">Soft Sculpture</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-icon-container">
+          <div class="cart-icon">
+            <span style="font-size: 1.25rem;">🛒</span>
+          </div>
+          <span id="cartCount" class="cart-count">0</span>
+        </a>
+        <div class="flex gap-2">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+      </div>
+
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container-sm">
+      <h1 class="hero-title">Sugar, Spice, and Wire That's Nice</h1>
+      <p class="hero-subtitle">
+        Handcrafted fuzzy wire soft sculptures that bring color and joy to your life
+      </p>
+      <a href="shop.html" class="btn btn-primary btn-lg">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+
+      <div id="featuredProducts" class="grid gap-6" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="product-card fade-in">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/606540/pexels-photo-606540.jpeg?w=400" alt="Floral Heart Sculpture">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Floral Heart Sculpture</h3>
+            <p class="product-price">₱450.00</p>
+            <p class="product-description">Handcrafted floral heart with soft pastel colors, perfect for gifting.</p>
+            <button class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" style="animation-delay: 0.1s;">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?w=400" alt="Mini Bouquet">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Mini Bouquet</h3>
+            <p class="product-price">₱350.00</p>
+            <p class="product-description">Colorful mini bouquet that never fades, made with love.</p>
+            <button class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" style="animation-delay: 0.2s;">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/67633/pexels-photo-67633.jpeg?w=400" alt="Custom Name">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Custom Name Wire</h3>
+            <p class="product-price">₱550.00</p>
+            <p class="product-description">Personalize with your name! Choose your favorite colors.</p>
+            <button class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" style="animation-delay: 0.3s;">
+          <div class="product-image">
+            <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?w=400" alt="Starburst">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Starburst Cluster</h3>
+            <p class="product-price">₱400.00</p>
+            <p class="product-description">Bursting with color, this star cluster brightens any room.</p>
+            <button class="btn btn-primary btn-sm btn-block">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section bg-blur-white">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="card-gradient-pink">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"The quality is amazing! Perfect gift for my best friend."</p>
+          <p class="review-author review-author-pink">- Maria S.</p>
+        </div>
+
+        <div class="card-gradient-blue">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Love the pastel colors! Delivery was fast and packaging was cute."</p>
+          <p class="review-author review-author-blue">- Jaylyn M.</p>
+        </div>
+
+        <div class="card-gradient-green">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Customization was super easy and the artist was very accommodating!"</p>
+          <p class="review-author review-author-green">- Alex T.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container-sm">
+      <div style="background: linear-gradient(135deg, #f9a8d4 0%, #d8b4fe 100%); border-radius: 1rem; padding: 3rem; text-align: center; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+        <h2 style="font-size: 1.875rem; font-weight: bold; color: white; margin-bottom: 1rem;">Ready to Add Color to Your Life?</h2>
+        <p style="color: white; font-size: 1.125rem; margin-bottom: 1.5rem;">Browse our collection and find the perfect piece for you</p>
+        <a href="shop.html" class="btn btn-secondary btn-lg">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3 class="footer-title">Soft Sculpture</h3>
+        <p class="footer-text">Handmade with love, crafted with care</p>
+      </div>
+
+      <div>
+        <h4 class="footer-subtitle">Quick Links</h4>
+        <ul>
+          <li><a href="shop.html" class="footer-link">Shop</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-subtitle">Customer Service</h4>
+        <ul>
+          <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+          <li><a href="shipping.html" class="footer-link">Shipping Info</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-subtitle">Contact</h4>
+        <p class="footer-text">Email: info@softsculpture.com</p>
+        <p class="footer-text">Phone: +63 (555) 123-4567</p>
+      </div>
+    </div>
+
+    <div class="footer-divider">
+      <p>&copy; 2024 Soft Sculpture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/src/main.js" type="module"></script>
+</body>
+</html>
